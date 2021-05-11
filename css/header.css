@@ -1,0 +1,12 @@
+.header {
+    margin-top: -20px;
+    padding: 35px 50px;
+    display: block;
+    background-image: url(https://www.xmple.com/wallpaper/linear-pink-blue-gradient-1920x1080-c2-190959-590921-a-45-f-14.svg);
+}
+
+.header__image {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 20px;
+}

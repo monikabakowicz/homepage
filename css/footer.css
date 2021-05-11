@@ -1,0 +1,24 @@
+.footer {
+    background-color: #e7e4e4;
+    max-width: 100%;
+    border: 1px dotted #c5c0c0;
+    box-shadow: 5px 5px 30px -12px #F0F4F5;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-bottom: 15px;
+    margin-top: 60px;
+}
+
+.footer__link {
+    color: #7a60a7;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer__link:hover {
+    color: #150d3fb9;
+}
+
+.footer__link:active {
+    color: #555151;
+}

@@ -1,0 +1,33 @@
+.table--hidden {
+    display: none;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+.table__caption {
+    caption-side: bottom;
+    text-align: left;
+    font-size: 13px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.table__header {
+    background-color: #7a60a7;
+    color: white;
+    font-weight: normal;
+}
+
+.table__cell {
+    border: 1px solid #ccc;
+    border-width: 0 0 1px;
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.table__row:hover {
+    background-color: #ebebebf6;
+}

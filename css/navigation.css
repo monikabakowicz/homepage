@@ -1,0 +1,34 @@
+.navigation {
+    background-color: #e7e4e4;
+    max-width: 100%;
+    padding: 5px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    
+}
+
+.navigation__item {
+    display: inline;
+    text-transform: uppercase;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.navigation__link {
+    color: #555151;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navigation__link:focus {
+    outline: 2px solid #150d3fb9;
+}
+
+.navigation__link:hover {
+    color: #150d3fb9;
+    outline: none;
+}
+
+.navigation__link:active {
+    color: #7a60a7;
+}
