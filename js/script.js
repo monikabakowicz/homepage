@@ -10,10 +10,29 @@
         body.classList.toggle("body--violet");
         changeThemeButtonText.innerText = body.classList.contains("body--violet") ? "white" : "violet";
     };
+
+
+    toggleNameColor = () => {
+        const article__span = document.querySelector(".article__span");
+        const changeNameColorButtonText = document.querySelector(".js-changeNameColorButtonText");
+        
+        article__span.classList.toggle("red");
+        
+        if (article__span.classList.contains("red")) {
+            changeNameColorButtonText.innerText = "violet";
+        } else {
+            changeNameColorButtonText.innerText = "red";
+        }
+    };
+
+
     
     const init = () => {
         const changeThemeButton = document.querySelector(".js-changeThemeButton");
         changeThemeButton.addEventListener("click", toggleBackground);
+
+        const changeNameColorButton = document.querySelector(".js-changeNameColorButton");
+        changeNameColorButton.addEventListener("click", toggleNameColor);
 
         welcome();
     };
@@ -21,24 +40,6 @@
     init ();
 
   }
-
-
-
-
-let changeNameColorButton = document.querySelector(".js-changeNameColorButton");
-let article__span = document.querySelector(".article__span");
-let changeNameColorButtonText = document.querySelector(".js-changeNameColorButtonText");
-
-changeNameColorButton.addEventListener("click", () => {
-    article__span.classList.toggle("red");
-
-
-    if (article__span.classList.contains("red")) {
-        changeNameColorButtonText.innerText = "violet";
-    } else {
-        changeNameColorButtonText.innerText = "red";
-    }
-})
 
 
 let hideTableButton = document.querySelector(".js-hideTableButton");
