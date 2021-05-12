@@ -1,20 +1,28 @@
 {
-    function welcome() {
+    const welcome = () => {
         console.log("Hello developers!");
     }
     
-    welcome();
-}
+    const toggleBackground = () => {
+        const body = document.querySelector(".body");
+        const changeThemeButtonText = document.querySelector(".js-changeThemeButtonText");
 
-let changeThemeButton = document.querySelector(".js-changeThemeButton");
-let body = document.querySelector(".body");
-let changeThemeButtonText = document.querySelector(".js-changeThemeButtonText");
+        body.classList.toggle("body--violet");
+        changeThemeButtonText.innerText = body.classList.contains("body--violet") ? "white" : "violet";
+    };
+    
+    const init = () => {
+        const changeThemeButton = document.querySelector(".js-changeThemeButton");
+        changeThemeButton.addEventListener("click", toggleBackground);
 
-changeThemeButton.addEventListener("click", () => {
-    body.classList.toggle("body--violet");
+        welcome();
+    };
 
-    changeThemeButtonText.innerText = body.classList.contains("violet") ? "white" : "violet";
-});
+    init ();
+
+  }
+
+
 
 
 let changeNameColorButton = document.querySelector(".js-changeNameColorButton");
