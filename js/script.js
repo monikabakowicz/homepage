@@ -1,9 +1,17 @@
+{
+    function welcome() {
+        console.log("Hello developers!");
+    }
+    
+    welcome();
+}
+
 let changeThemeButton = document.querySelector(".js-changeThemeButton");
 let body = document.querySelector(".body");
 let changeThemeButtonText = document.querySelector(".js-changeThemeButtonText");
 
 changeThemeButton.addEventListener("click", () => {
-    body.classList.toggle("violet");
+    body.classList.toggle("body--violet");
 
     changeThemeButtonText.innerText = body.classList.contains("violet") ? "white" : "violet";
 });
