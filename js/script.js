@@ -2,7 +2,7 @@
     const welcome = () => {
         console.log("Hello developers!");
     }
-    
+
     const toggleBackground = () => {
         const body = document.querySelector(".body");
         const changeThemeButtonText = document.querySelector(".js-changeThemeButtonText");
@@ -15,9 +15,9 @@
     toggleNameColor = () => {
         const article__span = document.querySelector(".article__span");
         const changeNameColorButtonText = document.querySelector(".js-changeNameColorButtonText");
-        
+
         article__span.classList.toggle("red");
-        
+
         if (article__span.classList.contains("red")) {
             changeNameColorButtonText.innerText = "violet";
         } else {
@@ -26,7 +26,16 @@
     };
 
 
-    
+    onHideTableClick = () => {
+        let table = document.querySelector(".table");
+        let changeTableButtonText = document.querySelector(".js-changeTableButtonText");
+
+        table.classList.toggle("table--hidden");
+        changeTableButtonText.innerText = table.classList.contains("table--hidden") ? "Show" : "Hide";
+    };
+
+
+
     const init = () => {
         const changeThemeButton = document.querySelector(".js-changeThemeButton");
         changeThemeButton.addEventListener("click", toggleBackground);
@@ -34,25 +43,16 @@
         const changeNameColorButton = document.querySelector(".js-changeNameColorButton");
         changeNameColorButton.addEventListener("click", toggleNameColor);
 
+        let hideTableButton = document.querySelector(".js-hideTableButton");
+        hideTableButton.addEventListener("click", onHideTableClick);
+
         welcome();
     };
 
-    init ();
+    init();
 
-  }
+}
 
-
-let hideTableButton = document.querySelector(".js-hideTableButton");
-let changeTableButtonText = document.querySelector(".js-changeTableButtonText");
-let table = document.querySelector(".table");
-
-hideTableButton.addEventListener("click", () => {
-    table.classList.toggle("table--hidden");
-
-    changeTableButtonText.innerText = table.classList.contains("table--hidden")
-        ? "Show"
-        : "Hide";
-});
 
 
 
