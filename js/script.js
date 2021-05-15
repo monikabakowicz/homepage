@@ -11,7 +11,6 @@
         changeThemeButtonText.innerText = body.classList.contains("body--violet") ? "white" : "violet";
     };
 
-
     const toggleNameColor = () => {
         const article__span = document.querySelector(".article__span");
         const changeNameColorButtonText = document.querySelector(".js-changeNameColorButtonText");
@@ -25,7 +24,6 @@
         }
     };
 
-
     const onHideTableClick = () => {
         const table = document.querySelector(".table");
         const changeTableButtonText = document.querySelector(".js-changeTableButtonText");
@@ -33,7 +31,6 @@
         table.classList.toggle("table--hidden");
         changeTableButtonText.innerText = table.classList.contains("table--hidden") ? "Show" : "Hide";
     };
-
 
     const onChangeImageClick = () => {
         const section__image1 = document.querySelector(".js-section__image1");
@@ -43,9 +40,7 @@
         section__image2.classList.toggle("section__image--hidden");
     };
 
-   
-
-    const init = () => {
+       const init = () => {
         const changeThemeButton = document.querySelector(".js-changeThemeButton");
         changeThemeButton.addEventListener("click", toggleBackground);
 
