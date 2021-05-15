@@ -12,7 +12,7 @@
     };
 
 
-    toggleNameColor = () => {
+    const toggleNameColor = () => {
         const article__span = document.querySelector(".article__span");
         const changeNameColorButtonText = document.querySelector(".js-changeNameColorButtonText");
 
@@ -26,7 +26,7 @@
     };
 
 
-    onHideTableClick = () => {
+    const onHideTableClick = () => {
         const table = document.querySelector(".table");
         const changeTableButtonText = document.querySelector(".js-changeTableButtonText");
 
@@ -35,7 +35,7 @@
     };
 
 
-    onChangeImageClick = () => {
+    const onChangeImageClick = () => {
         const section__image1 = document.querySelector(".js-section__image1");
         const section__image2 = document.querySelector(".js-section__image2");
 
